@@ -1,20 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package baitapbuoi4;
 
-/**
- *
- * @author Acer
- */
+import java.util.Scanner;
+
+
 public class BaiTapBuoi4 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhap a: ");
+        float a = sc.nextFloat();
+        System.out.println("Nhap b: ");
+        float b = sc.nextFloat();
+        
+        if(a != 0)
+        {
+            System.out.println("Phuong trinh co nghiem x = "+ -b/a);
+        }
+        else if(a == 0 && b == 0){
+            System.out.println("Phuong trinh co vo so nghiem");
+        }
+        else
+            System.out.println("Phuong trinh vo nghiem");
     }
-    
 }
